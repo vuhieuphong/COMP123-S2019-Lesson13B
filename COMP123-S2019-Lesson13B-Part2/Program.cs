@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using COMP123_S2019_Lesson13B_Part1.Views;
+using COMP123_S2019_Lesson13B_Part2.Views;
 
-namespace COMP123_S2019_Lesson13B_Part1
+namespace COMP123_S2019_Lesson13B_Part2
 {
     public static class Program
     {
-        public static StartForm startForm;
+        public static MyMDIParent parentForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,8 +18,8 @@ namespace COMP123_S2019_Lesson13B_Part1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            startForm = new StartForm();
-            Application.Run(startForm);
+            parentForm = new MyMDIParent();
+            Application.Run(parentForm);
         }
     }
 }
